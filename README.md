@@ -60,8 +60,9 @@ function SomeView() {
 
 | prop         | default | type   | description                 |
 | ------------ | ------- | ------ | --------------------------- |
-| defaultState | {}      | object | Optional: initial app state |
 | children     | null    | node   | Required: React component   |
+| defaultState | {}      | object | Optional: initial app state |
+| reducer      | old,new | void   | Optional: controled update  |
 
 For more examples on actually usage checkout [Multiplayer](https://github.com/jeffreymendez1993/Multiplayer) or [react-native-estate-example](https://github.com/jeffreymendez1993/react-native-estate-example) for a basic example.
 

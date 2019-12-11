@@ -1,6 +1,6 @@
 {
   "name": "react-estate",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "simple universal react state",
   "main": "src/index.js",
   "scripts": {
