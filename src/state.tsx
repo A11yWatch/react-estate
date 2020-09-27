@@ -1,29 +1,25 @@
 "use strict";
-/**
- *
- * @format
- * @flow
- */
-
 import React, { createContext, useContext, useReducer } from "react";
 
-const StateContext = createContext();
-const defaultReducer = (state, nextState) => ({
-  ...state,
-  ...nextState
-});
+type Props = {
+  children: React.ReactNode;
+  defaultState?: {};
+  reducer?: any;
+};
+
+const StateContext = createContext(null);
+
 export const useStateValue = () => useContext(StateContext);
 
-type Props = {
-  children: React.Node,
-  defaultState?: {},
-  reducer?: void
-};
+const defaultReducer = (state, nextState) => ({
+  ...state,
+  ...nextState,
+});
 
 export const StateProvider = ({
   children,
   defaultState = {},
-  reducer = defaultReducer
+  reducer = defaultReducer,
 }: Props) => (
   <StateContext.Provider value={useReducer(reducer, defaultState)}>
     {children}

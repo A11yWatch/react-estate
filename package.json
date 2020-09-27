@@ -2,9 +2,10 @@
   "name": "react-estate",
   "version": "1.0.9",
   "description": "simple universal react state",
-  "main": "src/index.js",
+  "main": "dist/state.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc"
   },
   "keywords": [
     "react-state",
@@ -14,8 +15,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeffreymendez1993/react-estate.git"
+    "url": "https://github.com/A11yWatch/react-estate.git"
   },
   "author": "Jeffrey Mendez <jeffmendez19@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8"
+  }
 }
