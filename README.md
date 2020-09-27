@@ -27,14 +27,10 @@ import { useStateValue } from "react-estate";
 function App() {
   const [state, setState] = useStateValue();
 
-  useEffect(
-    () => {
-      setState({ mounted: true });
-      console.log("log state", state);
-    },
-    [],
-    []
-  );
+  useEffect(() => {
+    setState({ mounted: true });
+    console.log("log state", state);
+  }, []);
 
   // render your component like normal
   return null;
@@ -64,4 +60,4 @@ function SomeView() {
 | defaultState | {}      | object | Optional: initial app state |
 | reducer      | old,new | void   | Optional: controled update  |
 
-For more examples on actually usage checkout [Multiplayer](https://github.com/jeffreymendez1993/Multiplayer) or [react-native-estate-example](https://github.com/jeffreymendez1993/react-native-estate-example) for a basic example.
+Example usage at: [Multiplayer](https://github.com/jeffreymendez1993/Multiplayer)
