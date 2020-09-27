@@ -1,6 +1,6 @@
 # react-estate
 
-simple universal react state, the easiest way to setup global app state
+simple universal react state, the easiest way to setup global app state.
 
 ## Getting Started
 

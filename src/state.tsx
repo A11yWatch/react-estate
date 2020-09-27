@@ -1,4 +1,3 @@
-"use strict";
 import React, { createContext, useContext, useReducer } from "react";
 
 type Props = {

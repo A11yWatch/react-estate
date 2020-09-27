@@ -1,6 +1,6 @@
 {
   "name": "react-estate",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "simple universal react state",
   "main": "dist/state.js",
   "scripts": {
@@ -20,9 +20,11 @@
   "author": "Jeffrey Mendez <jeffmendez19@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.0.3",
     "@types/jest": "^26.0.14",
     "@types/react": "^16.9.49",
-    "@types/react-dom": "^16.9.8"
+    "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
   }
 }
