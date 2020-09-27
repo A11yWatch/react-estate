@@ -1,6 +1,6 @@
 # react-estate
 
-simple universal react state your next react app. Access state outside of the react life-cycle.
+simple universal react state, the easiest way to setup global app state
 
 ## Getting Started
 
@@ -65,7 +65,3 @@ function SomeView() {
 | reducer      | old,new | void   | Optional: controled update  |
 
 For more examples on actually usage checkout [Multiplayer](https://github.com/jeffreymendez1993/Multiplayer) or [react-native-estate-example](https://github.com/jeffreymendez1993/react-native-estate-example) for a basic example.
-
-## In progess
-
-1. Currenty working on accessing state outside of a react component.

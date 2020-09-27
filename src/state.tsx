@@ -7,11 +7,15 @@ type Props = {
   reducer?: any;
 };
 
-const StateContext = createContext(null);
+type State = {
+  [x: string]: any;
+};
+
+const StateContext = createContext({});
 
 export const useStateValue = () => useContext(StateContext);
 
-const defaultReducer = (state, nextState) => ({
+const defaultReducer = (state: State, nextState: State) => ({
   ...state,
   ...nextState,
 });

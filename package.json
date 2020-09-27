@@ -1,11 +1,11 @@
 {
   "name": "react-estate",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "simple universal react state",
   "main": "dist/state.js",
   "scripts": {
-    "test": "jest",
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "tsc && cp types/state.d.ts dist/state.d.ts"
   },
   "keywords": [
     "react-state",
@@ -20,9 +20,7 @@
   "author": "Jeffrey Mendez <jeffmendez19@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.0.3"
-  },
-  "dependencies": {
+    "typescript": "^4.0.3",
     "@types/jest": "^26.0.14",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8"
